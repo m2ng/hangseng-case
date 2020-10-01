@@ -1,97 +1,31 @@
-# kaggle-hp
+# Hang Seng Case Competition
 
 ## About
-(Kaggle Competition) House Prices: Advanced Regression Techniques
+(Kaggle Competition) Prudential Life Insurance Assessment
 
-See the corresponding [Kaggle page](https://www.kaggle.com/c/house-prices-advanced-regression-techniques).
+See the corresponding [Kaggle page](https://www.kaggle.com/c/prudential-life-insurance-assessment/).
+
+## Data description
+
+In this dataset, you are provided over a hundred variables describing attributes of life insurance applicants. The task is to predict the "Response" variable for each Id in the test set. "Response" is an ordinal measure of risk that has 8 levels.
 
 ## File descriptions
-- train.csv - the training set
-- test.csv - the test set
-- data_description.txt - full description of each column, originally prepared by Dean De Cock but lightly edited to match the column names used here
-- sample_submission.csv - a benchmark submission from a linear regression on year and month of sale, lot square footage, and number of bedrooms
+
+-   train.csv - the training set, contains the Response values
+-   test.csv - the test set, you must predict the Response variable for all rows in this file
+-   sample_submission.csv - a sample submission file in the correct format
 
 ## Data fields
-
-Here's a brief version of what you'll find in the data description file.
-
-- SalePrice - the property's sale price in dollars. This is the target variable that you're trying to predict.
-- MSSubClass: The building class
-- MSZoning: The general zoning classification
-- LotFrontage: Linear feet of street connected to property
-- LotArea: Lot size in square feet
-- Street: Type of road access
-- Alley: Type of alley access
-- LotShape: General shape of property
-- LandContour: Flatness of the property
-- Utilities: Type of utilities available
-- LotConfig: Lot configuration
-- LandSlope: Slope of property
-- Neighborhood: Physical locations within Ames city limits
-- Condition1: Proximity to main road or railroad
-- Condition2: Proximity to main road or railroad (if a second is present)
-- BldgType: Type of dwelling
-- HouseStyle: Style of dwelling
-- OverallQual: Overall material and finish quality
-- OverallCond: Overall condition rating
-- YearBuilt: Original construction date
-- YearRemodAdd: Remodel date
-- RoofStyle: Type of roof
-- RoofMatl: Roof material
-- Exterior1st: Exterior covering on house
-- Exterior2nd: Exterior covering on house (if more than one material)
-- MasVnrType: Masonry veneer type
-- MasVnrArea: Masonry veneer area in square feet
-- ExterQual: Exterior material quality
-- ExterCond: Present condition of the material on the exterior
-- Foundation: Type of foundation
-- BsmtQual: Height of the basement
-- BsmtCond: General condition of the basement
-- BsmtExposure: Walkout or garden level basement walls
-- BsmtFinType1: Quality of basement finished area
-- BsmtFinSF1: Type 1 finished square feet
-- BsmtFinType2: Quality of second finished area (if present)
-- BsmtFinSF2: Type 2 finished square feet
-- BsmtUnfSF: Unfinished square feet of basement area
-- TotalBsmtSF: Total square feet of basement area
-- Heating: Type of heating
-- HeatingQC: Heating quality and condition
-- CentralAir: Central air conditioning
-- Electrical: Electrical system
-- 1stFlrSF: First Floor square feet
-- 2ndFlrSF: Second floor square feet
-- LowQualFinSF: Low quality finished square feet (all floors)
-- GrLivArea: Above grade (ground) living area square feet
-- BsmtFullBath: Basement full bathrooms
-- BsmtHalfBath: Basement half bathrooms
-- FullBath: Full bathrooms above grade
-- HalfBath: Half baths above grade
-- Bedroom: Number of bedrooms above basement level
-- Kitchen: Number of kitchens
-- KitchenQual: Kitchen quality
-- TotRmsAbvGrd: Total rooms above grade (does not include bathrooms)
-- Functional: Home functionality rating
-- Fireplaces: Number of fireplaces
-- FireplaceQu: Fireplace quality
-- GarageType: Garage location
-- GarageYrBlt: Year garage was built
-- GarageFinish: Interior finish of the garage
-- GarageCars: Size of garage in car capacity
-- GarageArea: Size of garage in square feet
-- GarageQual: Garage quality
-- GarageCond: Garage condition
-- PavedDrive: Paved driveway
-- WoodDeckSF: Wood deck area in square feet
-- OpenPorchSF: Open porch area in square feet
-- EnclosedPorch: Enclosed porch area in square feet
-- 3SsnPorch: Three season porch area in square feet
-- ScreenPorch: Screen porch area in square feet
-- PoolArea: Pool area in square feet
-- PoolQC: Pool quality
-- Fence: Fence quality
-- MiscFeature: Miscellaneous feature not covered in other categories
-- MiscVal: $Value of miscellaneous feature
-- MoSold: Month Sold
-- YrSold: Year Sold
-- SaleType: Type of sale
-- SaleCondition: Condition of sale
+-   Id: A unique identifier associated with an application.
+-   Product_Info_1-7: A set of normalized variables relating to the product applied for
+-   Ins_Age: Normalized age of applicant
+-   Ht: Normalized height of applicant
+-   Wt: Normalized weight of applicant
+-   BMI: Normalized BMI of applicant
+-   Employment_Info_1-6: A set of normalized variables relating to the employment history of the applicant.
+-   InsuredInfo_1-6: A set of normalized variables providing information about the applicant.
+-   Insurance_History_1-9: A set of normalized variables relating to the insurance history of the applicant.
+-   Family_Hist_1-5: A set of normalized variables relating to the family history of the applicant.
+-   Medical_History_1-41: A set of normalized variables relating to the medical history of the applicant.
+-   Medical_Keyword_1-48: A set of dummy variables relating to the presence of/absence of a medical keyword being associated with the application.
+-   Response: This is the target variable, an ordinal variable relating to the final decision associated with an application
