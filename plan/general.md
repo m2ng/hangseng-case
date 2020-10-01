@@ -22,13 +22,14 @@
 -   Either
     -   connect the insights to form a single story; or
     -   construct a separate story for each insight
--   Deliver important messages to the interviewer without blowing them up with too technical stuff
+-   Deliver important messages to the interviewer without blowing him/her up with too technical stuff
 -   Demonstrate how I am able to match their experience with the stuff I will present
 
 ## WBS
 -   Phase 1: Design
     -   Data-driven questions
         -   What data-related questions I have before performing the data analysis?
+        -   Questions to be asked:
     -   Data analysis procedure design
         -   Data introduction
         -   Data preprocessing
